@@ -27,7 +27,6 @@ include 'config.php'
         <li class="wrap"> <button class="button">Login</button></li>
     </div>
        
-        
     </ul>
    </nav>
 
