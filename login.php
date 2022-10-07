@@ -2,7 +2,6 @@
 include'config.php';
 
 
-
 if(isset($_POST)){
     $email = $_POST['email'];
     $pass=$_POST['password'];
@@ -13,7 +12,7 @@ if(isset($_POST)){
     echo 'Hello world';
     echo $email;
     echo $pass;
-
+                                            Q
     if($count == 1){  
         echo "<h1><center> Login successful </center></h1>";     
     }  

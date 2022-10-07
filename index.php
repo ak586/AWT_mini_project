@@ -16,32 +16,48 @@ include 'config.php'
 </head>
 <body>
    
-   <nav>
-    <ul >
-        <div class="first" > <li>logo</li>
-       </div>
-       <div class="second">
-        <li><a href="">About</a> </li>
-        <li>Recipes</li>
-        <li>Pricing</li>
-        <li class="wrap"> <button class="button">Login</button></li>
-    </div>
-       
-    </ul>
-   </nav>
 
-   <!-- login form  -->
-   <div class="center_box">
-   <div class=" main">
+   <!-- navbar start -->
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Brand</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ms-auto  ">
+
+
+   <li class="nav-item">
+    <a class="nav-link" href="">About</a>
+   </li>
+   <li class="nav-item">
+    <a class="nav-link" href="">Receipe</a>
+   </li>
+   <li class="nav-item">
+    <a class="nav-link" href="">Plan</a>
+   </li>
+   <li >
+   <button class="btn btn-outline-success">Login</button>
+   </li>
+    </ul>
+    </div>
+  </nav>
+
+  <!-- end of the navbar -->
+
+
+
+  <div class=" main">
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 		<div class="signup">
 			<form action="register.php" method="POST">
 				<label for="chk" aria-hidden="true">Sign up</label>
-                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="name" placeholder="Name" required="">
 				<input type="email" name="email" placeholder="Email" required="">
 				<input type="password" name="password" placeholder="Password" required="">
-				<button type="submit">Sign up</button>
+				<button class="su-button" type="submit">Sign up</button>
 			</form>
 		</div>
 
@@ -49,14 +65,13 @@ include 'config.php'
 			<form action="login.php" method="POST">
 				<label for="chk" aria-hidden="true">Login</label>
                
-				<input type="email" name="email" placeholder="Email" required>
-				<input type="password" name="password" placeholder="Password" required minlength="5">
-				<button type="submit">Login</button>
+				<input type="email" name="email" placeholder="Email" required="">
+				<input type="password" name="password" placeholder="Password" required="" minlength="5">
+				<button  class="lg-button" type="submit">Login</button>
 			</form>
 		</div>
 	</div>
-    </div>
-
+    
     
 </body>
 </html>
